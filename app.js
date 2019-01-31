@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(flash());
 
 app.use(session({
-  secret: settings.cookieSecret,
+  secret: settings.cookieSecret,//secret属性是对session的签名，通常是一个字符串，如果不写无法完成session存储进入数据库
   store: new MongoStore({
     db: settings.db,
   }), //session提供会话支持，设置store参数为MongoStore储存数据
