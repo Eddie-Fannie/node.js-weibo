@@ -1,5 +1,5 @@
 安装EXpress $ npm install -g express
-创建一个项目 $ express -t ejs microblog(项目名称），再根据终端提示完成后续命令
+创建一个项目 $ express --view=ejs microblog(项目名称），再根据终端提示完成后续命令
 express4.0之后运行启动服务器是运行 $ npm start
 
 app.js是工程的入口。routes是一个本地模块，为指定路径组织返回内容
